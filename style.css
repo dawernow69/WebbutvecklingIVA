@@ -1,5 +1,25 @@
 body{
     background-color: aqua;
+    color:blue;
+    display: grid;
+    grid-template-rows: 80px 80px auto 50px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
 }
 
 h1{
@@ -8,4 +28,9 @@ h1{
 
 .altP{
     text-align: right;
+    border:1px solid black;
+}
+
+footer{
+    grid-area: footer;
 }
